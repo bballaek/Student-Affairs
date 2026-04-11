@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>กลุ่มภารกิจกิจการนิสิต | คณะครุศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index2.html" class="logo-area">
+
+        <div class="logo-img">
+          <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <div class="logo-text">
+          <span class="main" data-i18n="logo.main">กลุ่มภารกิจกิจการนิสิต</span>
+          <span class="sub" data-i18n="logo.sub">คณะครุศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</span>
+        </div>
+
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index2.html" class="active" data-i18n="nav.home">หน้าหลัก</a></li>
+        <li><a href="about.html" data-i18n="nav.about">เกี่ยวกับเรา</a></li>
+        <li><a href="scholarships.html" data-i18n="nav.scholarships">สวัสดิการนิสิต</a></li>
+        <li><a href="staff.html" data-i18n="nav.staff">บุคลากร</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">โครงการ</a></li>
+        <li><a href="activities.html" data-i18n="nav.activities">กิจกรรม</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">ติดต่อเรา</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <span class="lang-btn">TH</span>
+        <a href="lasspaper.html" class="btn-login" onclick="openLogin(); return false;" data-i18n="nav.login">เข้าสู่ระบบ </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO (หน้าแรกเท่านั้น) ─── -->
+  <header class="hero" id="hero-block">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-content-inner">
+        <div class="hero-badge">STUDENT AFFAIRS · FACULTY OF EDUCATION</div>
+        <h1 id="hero-title" data-i18n="index.hero.title">กลุ่มภารกิจกิจการนิสิต</h1>
+        <p class="hero-subtext" data-i18n="index.hero.subtext">
+          ส่งเสริมกิจกรรมของนิสิต ดูแลสวัสดิการ และระบบดูแลที่ครอบคลุม
+          เพื่อให้นิสิตค้นหาตัวตน พัฒนาความสามารถ และเติบโตอย่างมีคุณภาพ
+        </p>
+        <div class="hero-buttons">
+          <a href="#home-about-section" class="hero-btn-outline" onclick="document.getElementById('home-about-section').scrollIntoView({behavior:'smooth'}); return false;" data-i18n="index.hero.btn.about">เกี่ยวกับเรา</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="hero-counter"><strong>01</strong> / 03</div>
+      <div class="hero-dots">
+        <div class="dot active" onclick="jumpToSlide(0)"></div>
+        <div class="dot" onclick="jumpToSlide(1)"></div>
+        <div class="dot" onclick="jumpToSlide(2)"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="active">
+
+      <!-- ① ที่มา -->
+      <div class="home-about" id="home-about-section">
+        <div class="container">
+          <div class="about-layout">
+            <div class="about-img-wrap">
+              <img class="about-img-main"
+                src="https://www.chula.ac.th/wp-content/uploads/2017/11/chula-faculty-education-hero-desktop.jpg"
+                alt="นิสิตกิจกรรม">
+              <div class="about-img-float"></div>
+              <div class="about-img-badge"></div>
+            </div>
+
+            <div class="about-text">
+              <div class="kicker" data-i18n="index.about.kicker">ที่มา</div>
+              <h2 data-i18n-html="index.about.h2">กลุ่มภารกิจ<br><em>กิจการนิสิต</em></h2>
+              <p data-i18n="index.about.p">
+                กลุ่มภารกิจกิจการนิสิต มีภารกิจหลักในการจัดบริการส่งเสริมชีวิตและความเป็นอยู่ของนิสิตในขณะศึกษาในมหาวิทยาลัย โดยมีเป้าหมายที่จะพัฒนานิสิตให้เป็นผู้มีคุณภาพ คุณธรรม คุณค่า และความพร้อมในการพัฒนาตนเองให้เป็นบัณฑิตที่สมบูรณ์ มีความรู้คู่คุณธรรม
+              </p>
+
+
+
+              <a href="about.html" class="about-cta">
+                <span data-i18n="index.about.cta">อ่านเพิ่มเติม</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MARQUEE -->
+      <div class="marquee-strip">
+        <div class="marquee-track">
+          <span class="marquee-item"><span data-i18n="index.marquee.scholarship">ทุนการศึกษา</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.welfare">สวัสดิการนิสิต</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.activities">กิจกรรมพัฒนาตน</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.leadership">ภาวะผู้นำ</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.volunteer">จิตอาสา</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.insurance">ประกันสุขภาพ</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.service">บริการนิสิต</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.projects">โครงการพัฒนา</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.scholarship">ทุนการศึกษา</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.welfare">สวัสดิการนิสิต</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.activities">กิจกรรมพัฒนาตน</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.leadership">ภาวะผู้นำ</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.volunteer">จิตอาสา</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.insurance">ประกันสุขภาพ</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.service">บริการนิสิต</span> <i class="fas fa-circle"></i></span>
+          <span class="marquee-item"><span data-i18n="index.marquee.projects">โครงการพัฒนา</span> <i class="fas fa-circle"></i></span>
+        </div>
+      </div>
+
+      <!-- ③ สวัสดิการนิสิตเบื้องต้น -->
+      <div class="welfare-preview">
+        <div class="container">
+          <div class="welfare-preview-head">
+            <div class="welfare-head-text">
+              <div class="kicker">Student Welfare</div>
+              <h2 data-i18n="index.welfare.h2">สวัสดิการนิสิต</h2>
+              <p data-i18n="index.welfare.p">บริการและสิทธิประโยชน์ที่นิสิตทุกคนสามารถเข้าถึงได้ ตลอดการศึกษาในมหาวิทยาลัย</p>
+            </div>
+            <a href="scholarships.html" class="welfare-see-all">
+              <span data-i18n="index.welfare.seeall">ดูรายละเอียดทั้งหมด</span> <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="welfare-preview-grid">
+            <div class="welfare-card">
+              <div class="welfare-card-icon"><i class="fas fa-graduation-cap"></i></div>
+              <h4 data-i18n="index.welfare.card1.h4">ทุนการศึกษา</h4>
+              <p data-i18n="index.welfare.card1.p">ทุนอุดหนุน ทุนภูมิพล ทุนจุฬาสงเคราะห์ ทุนอาหารกลางวัน และทุนจากหน่วยงานภายนอก</p>
+            </div>
+            <div class="welfare-card">
+              <div class="welfare-card-icon"><i class="fas fa-shield-alt"></i></div>
+              <h4 data-i18n="index.welfare.card2.h4">ประกันและสุขภาพ</h4>
+              <p data-i18n="index.welfare.card2.p">ประกันอุบัติเหตุ หลักประกันสุขภาพ รพ.จุฬาฯ และประกันนิสิตต่างชาติ</p>
+            </div>
+            <div class="welfare-card">
+              <div class="welfare-card-icon"><i class="fas fa-briefcase"></i></div>
+              <h4 data-i18n="index.welfare.card3.h4">การจ้างงานพิเศษ</h4>
+              <p data-i18n="index.welfare.card3.p">เปิดโอกาสให้นิสิตทำงานกับมหาวิทยาลัย ค่าตอบแทน 100 บาท/ชั่วโมง</p>
+            </div>
+            <div class="welfare-card">
+              <div class="welfare-card-icon"><i class="fas fa-car"></i></div>
+              <h4 data-i18n="index.welfare.card4.h4">บริการนิสิต</h4>
+              <p data-i18n="index.welfare.card4.p">บัตรติดรถยนต์ การผ่อนผันทหาร และการขอใช้ยานพาหนะสำหรับกิจกรรม</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ④ ข่าวสารและกิจกรรม -->
+      <div class="news-section">
+        <div class="container">
+          <div class="news-head">
+            <div class="news-head-left">
+              <div class="kicker" data-i18n="index.news.kicker">อัปเดตล่าสุด</div>
+              <h2 data-i18n="index.news.h2">ข่าวสารและกิจกรรม</h2>
+            </div>
+            <a href="#" class="news-see-all"><span data-i18n="index.news.seeall">ดูทั้งหมด</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+
+          <div class="news-grid">
+            <div class="news-featured">
+              <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=1200&q=80" alt="ข่าวหลัก">
+              <div class="news-featured-body">
+                <div class="news-tag" data-i18n="index.news.tag1">ทุนการศึกษา</div>
+                <div class="news-date"><i class="fas fa-calendar"></i> 22 มีนาคม 2568</div>
+                <h3 data-i18n="index.news.item1.h3">เปิดรับสมัครทุนการศึกษาประเภทอุดหนุนการศึกษา ภาคต้น ปีการศึกษา 2568</h3>
+                <p data-i18n="index.news.item1.p">สำหรับนิสิตที่มีความจำเป็นทางการเงินและมีผลการเรียนตามเกณฑ์ที่กำหนด สามารถยื่นใบสมัครได้ที่กลุ่มภารกิจกิจการนิสิต</p>
+                <a href="#" class="news-read-more"><span data-i18n="index.news.readmore">อ่านต่อ</span> <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="news-list">
+              <div class="news-item">
+                <img class="news-item-img" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&q=80" alt="">
+                <div class="news-item-body">
+                  <div class="news-item-date">14 มีนาคม 2568</div>
+                  <h4 data-i18n="index.news.item2.h4">กำหนดการต่ออายุประกันสุขภาพนิสิตต่างชาติ ภาคต้น 2568</h4>
+                  <p data-i18n="index.news.item2.p">ติดตามรายละเอียดเอกสารและระยะเวลาที่เกี่ยวข้อง</p>
+                </div>
+              </div>
+              <div class="news-item">
+                <img class="news-item-img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80" alt="">
+                <div class="news-item-body">
+                  <div class="news-item-date">10 มีนาคม 2568</div>
+                  <h4 data-i18n="index.news.item3.h4">โครงการพัฒนาทักษะความเป็นผู้นำนิสิตครู ครั้งที่ 12</h4>
+                  <p data-i18n="index.news.item3.p">กิจกรรมเสริมสร้างภาวะผู้นำ การทำงานร่วมกัน และการเติบโตเชิงวิชาชีพ</p>
+                </div>
+              </div>
+              <div class="news-item">
+                <img class="news-item-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80" alt="">
+                <div class="news-item-body">
+                  <div class="news-item-date">05 มีนาคม 2568</div>
+                  <h4 data-i18n="index.news.item4.h4">ประกาศรายชื่อผู้ได้รับรางวัลนิสิตทำชื่อเสียงให้มหาวิทยาลัย</h4>
+                  <p data-i18n="index.news.item4.p">ยกย่องนิสิตที่สร้างผลงานดีเด่นในปีการศึกษา 2567</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" data-i18n-title="scroll.top" title="กลับด้านบน">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 data-i18n="footer.brand.h3">กลุ่มภารกิจกิจการนิสิต</h3>
+          <p data-i18n="footer.brand.p">คณะครุศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</p>
+          <address data-i18n-html="footer.address">
+  254 ถนนพญาไท แขวงวังใหม่<br>
+  เขตปทุมวัน กรุงเทพฯ 10330<br><br>
+  โทร: 0-2218-2400<br>
+  อีเมล: <a href="mailto:studentaffairs.edu@chula.ac.th">studentaffairs.edu@chula.ac.th</a>
+</address>
+          <div class="social-links">
+            <a class="social-link" href="https://www.facebook.com/Sa.EDU.CU" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-link" href="/cdn-cgi/l/email-protection#6211034c070617011722050f030b0e4c010d0f"><i class="fas fa-envelope"></i></a>
+            <a class="social-link" href="https://line.me/ti/p/@sa.educu" target="_blank"><i class="fab fa-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.services">บริการ</h4>
+          <ul>
+            <li><a href="scholarships.html" data-i18n="footer.services.scholarship">ทุนการศึกษา</a></li>
+            <li><a href="scholarships.html" data-i18n="footer.services.welfare">สวัสดิการนิสิต</a></li>
+            <li><a href="projects.html" data-i18n="footer.services.projects">โครงการ</a></li>
+            <li><a href="#" onclick="openLogin(); return false;" data-i18n="footer.services.system">ระบบนิสิต</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.about">เกี่ยวกับ</h4>
+          <ul>
+            <li><a href="about.html" data-i18n="footer.about.history">ประวัติหน่วยงาน</a></li>
+            <li><a href="staff.html" data-i18n="footer.about.staff">บุคลากร</a></li>
+            <li><a href="index2.html" data-i18n="footer.about.news">ข่าวสาร</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.links">ลิงก์ที่เกี่ยวข้อง</h4>
+          <ul>
+            <li><a href="https://www.edu.chula.ac.th" target="_blank" data-i18n="footer.links.edu">คณะครุศาสตร์</a></li>
+            <li><a href="https://www.chula.ac.th" target="_blank" data-i18n="footer.links.chula">จุฬาลงกรณ์มหาวิทยาลัย</a></li>
+            <li><a href="#" data-i18n="footer.links.reg">ระบบ Reg Chula</a></li>
+            <li><a href="#" data-i18n="footer.links.privacy">นโยบายข้อมูลส่วนบุคคล</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">Copyright © 2568 | กลุ่มภารกิจกิจการนิสิต คณะครุศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</p>
+        <p data-i18n="footer.dev">พัฒนาโดย หน่วยเทคโนโลยีสารสนเทศ</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // ─── SLIDESHOW ───
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.dot');
+    const heroCounter = document.querySelector('.hero-counter');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentSlide = index;
+      const n = String(index + 1).padStart(2, '0');
+      const total = String(slides.length).padStart(2, '0');
+      heroCounter.innerHTML = `<strong>${n}</strong> / ${total}`;
+    }
+
+    function jumpToSlide(i) { showSlide(i); }
+
+    setInterval(() => {
+      showSlide((currentSlide + 1) % slides.length);
+    }, 5000);
+
+    showSlide(0);
+
+    // ─── NAV SCROLL + SCROLL-TO-TOP ───
+    window.addEventListener('scroll', () => {
+      document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 10);
+      document.getElementById('scrollTopBtn').classList.toggle('visible', window.scrollY > 400);
+    });
+  </script>
+
+  </body>
+
+</html>
